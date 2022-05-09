@@ -55,6 +55,29 @@ y(t) = y₀ + a * exp(k * t) * sin(t)
 # ╔═╡ 43c0b72e-94ce-49b2-bde5-dbe1e74ef8dd
 plot(x.(t), y.(t))
 
+# ╔═╡ 92a49e86-7244-4e36-9321-e16e967ffc99
+md"""
+And further illustrations from
+
+[https://www.johndcook.com/blog/2022/05/09/iterated-golden-rectangles/](https://www.johndcook.com/blog/2022/05/09/iterated-golden-rectangles/)
+"""
+
+# ╔═╡ 7674aa69-6c46-4c16-b640-c8369e9fedff
+rectangle(x₀, y₀, x₁, y₁) = Shape([x₀,x₁,x₁,x₀], [y₀,y₀,y₁,y₁])
+
+# ╔═╡ c61b9bc8-523d-44b9-bb42-105df6c56a55
+begin 
+	op = 0.3
+	plot(x.(t), y.(t), lw=3, legend = :topleft)
+	plot!(rectangle(0, 0, ϕ, 1), color="black", opacity=op)
+	plot!(rectangle(0, 0, 1, 1), color="blue", opacity=op)
+	plot!(rectangle(1, 2 - ϕ, ϕ, 1), color="green", opacity=op)
+	plot!(rectangle(2ϕ - 2, 0, ϕ, 2 - ϕ), color="orange", opacity=op)
+	plot!(rectangle(1, 0, 2ϕ - 2, 2ϕ - 3), color="red", opacity=op)
+	plot!([0, ϕ], [1, 0], color="black", linestyle=:dash, lw=4)
+	plot!([1, ϕ], [0, 1], color="black",linestyle=:dash, lw=4)
+end
+
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
@@ -984,5 +1007,8 @@ version = "0.9.1+5"
 # ╠═727b0b93-ddec-41cb-bf71-202e616dfefe
 # ╠═efcf8ab0-2499-4faa-b327-b8e6656af79b
 # ╠═43c0b72e-94ce-49b2-bde5-dbe1e74ef8dd
+# ╟─92a49e86-7244-4e36-9321-e16e967ffc99
+# ╠═7674aa69-6c46-4c16-b640-c8369e9fedff
+# ╠═c61b9bc8-523d-44b9-bb42-105df6c56a55
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
