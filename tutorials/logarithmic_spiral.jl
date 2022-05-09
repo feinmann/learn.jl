@@ -26,7 +26,7 @@ From the inspiring blog post by John D. Cook
 """
 
 # ╔═╡ d3a91efa-cfbf-11ec-29a4-81e8190de5f2
-ϕ = (1 + 5^0.5)/2
+ϕ = (1 + √5)/2
 
 # ╔═╡ 98638247-b6ab-4eca-a14d-852ec551dc7b
 y₀ = 1/(2 + ϕ)
@@ -970,8 +970,8 @@ version = "0.9.1+5"
 """
 
 # ╔═╡ Cell order:
-# ╠═3753506a-c4b4-43b6-b3c2-5472389b5298
-# ╠═659d9b10-04ff-4339-9a6b-49e2eed77aa1
+# ╟─3753506a-c4b4-43b6-b3c2-5472389b5298
+# ╟─659d9b10-04ff-4339-9a6b-49e2eed77aa1
 # ╟─62d600bb-1ebe-42f4-9576-a420546292e1
 # ╠═b9da8b29-7958-427e-8fc1-8104449fde0f
 # ╠═d3a91efa-cfbf-11ec-29a4-81e8190de5f2
