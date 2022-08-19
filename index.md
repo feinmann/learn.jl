@@ -1,11 +1,11 @@
 +++
-title = "Julia Tutorials Template"
+title = "learn: Julia Tutorials Website"
 tags = ["code", "tutorials"]
 +++
 
-# Julia Tutorials Template
+# learn: Julia Tutorials Website
 
-This is a template repository which can be used to create Julia tutorials websites.
+This website is made from a template repository which can be used to create Julia tutorials websites.
 To use this website as a template, go to
 <https://github.com/rikhuijzer/JuliaTutorialsTemplate>
 and click on the big "Use this template" button.

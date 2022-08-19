@@ -88,11 +88,11 @@ julia> ]
 
 pkg> activate .
 
-(JuliaTutorialsTemplate) pkg> instantiate
+(learn) pkg> instantiate
 
-(JuliaTutorialsTemplate) pkg> # Press backspace to go back
+(learn) pkg> # Press backspace to go back
 
-julia> using JuliaTutorialsTemplate
+julia> using learn
 
 julia> build_tutorials()
 [...]

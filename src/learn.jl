@@ -1,8 +1,8 @@
-module JuliaTutorialsTemplate
+module learn
 
 using PlutoStaticHTML
 
-const PKGDIR = pkgdir(JuliaTutorialsTemplate)
+const PKGDIR = pkgdir(learn)
 
 export build_tutorials
 
